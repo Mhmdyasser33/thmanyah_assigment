@@ -1,0 +1,1 @@
+export  type corsCallback = (err : Error | null , allowed ?: boolean) => void 

@@ -1,0 +1,1 @@
+export const allowedOrigin = ['http://localhost:4000']

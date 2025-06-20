@@ -6,7 +6,8 @@
       "outDir": "dist",
       "sourceMap": true, 
       "noImplicitAny": true ,
-      "target": "ES2022"
+      "target": "ES2022",
+      "allowImportingTsExtensions": true
     },
     "include": ["src/**/*"] 
   }
