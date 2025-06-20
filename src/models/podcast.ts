@@ -1,12 +1,16 @@
 import mongoose from "mongoose"
 
-const podcastSchema = new mongoose.Schema({
-  trackId: { type: Number, required: true, unique: true },
-  artistName: { type: String, required: true },
-  collectionName: { type: String, required: true },
-  artworkUrl60 : {type : String},
-  feedUrl : {type : String}
-},{timestamps : true});
+const podcastSchema = new mongoose.Schema(
+  {
+    collectionId: { type: Number, unique: true },
+    artistName: { type: String, required: true },
+    collectionName: { type: String, required: true },
+    artworkUrl60: { type: String },
+    feedUrl: { type: String },
+    primaryGenreName: { type: String }
+  },
+  { timestamps: true }
+);
 
 
 podcastSchema.index({trackId : 1} , {unique : true})
