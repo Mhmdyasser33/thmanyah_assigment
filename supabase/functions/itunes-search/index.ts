@@ -8,7 +8,7 @@ const corsHeaders = {
 }
 
 serve(async (req) => {
-  // Handle CORS preflight requests
+  // Handle CORS 
   if (req.method === 'OPTIONS') {
     return new Response('ok', { headers: corsHeaders })
   }
@@ -39,13 +39,13 @@ serve(async (req) => {
 
     console.log(`Found ${itunesData.results?.length || 0} results for "${searchTerm}"`)
 
-    // Process and store results in database
+
     const programs = []
     
     if (itunesData.results && itunesData.results.length > 0) {
       for (const item of itunesData.results) {
         try {
-          // Map iTunes API response to our database schema
+        
           const program = {
             wrapper_type: item.wrapperType || null,
             kind: item.kind || null,
