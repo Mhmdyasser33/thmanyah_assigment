@@ -1,9 +1,8 @@
-
-import { searchItunes } from "../services/itune.service";
+import { searchItunes } from "../../services/itune.service";
 import {
   upsertPodcasts,
   findPodcastsByTerm,
-} from "../services/podcast.service";
+} from "../../services/podcast.service";
 
 export async function searchPodcastHandler(req: any, res: any) {
   try {
