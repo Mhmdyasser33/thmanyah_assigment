@@ -1,4 +1,4 @@
-import { ItunesSearch } from "@/components/ITunesSearch";
+import { ItunesSearch } from "../components/ItunesSearch/index";
 
 
 

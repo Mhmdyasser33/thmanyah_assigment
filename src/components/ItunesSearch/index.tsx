@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
-import SearchForm from './SearchForm';
-import ResultGrid from './ResultGrid';
+
 import { Card, CardContent } from '@/components/ui/card';
 import { useItunesSearch } from '@/hooks/useItunesSearch';
+import SearchForm from '../ItunesSearch/SearchForm';
+import ResultGrid from '../ItunesSearch/ResultGrid';
 
 export const ItunesSearch = () => {
   const [currentSearch, setCurrentSearch] = useState('');
