@@ -4,7 +4,7 @@ import ResultGrid from './ResultGrid';
 import { Card, CardContent } from '@/components/ui/card';
 import { useItunesSearch } from '@/hooks/useItunesSearch';
 
-const ItunesSearch = () => {
+export const ItunesSearch = () => {
   const [currentSearch, setCurrentSearch] = useState('');
   const { data, isLoading, error } = useItunesSearch(currentSearch);
 
@@ -31,5 +31,3 @@ const ItunesSearch = () => {
     </div>
   );
 };
-
-export default ItunesSearch;
